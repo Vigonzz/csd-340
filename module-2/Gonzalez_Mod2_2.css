@@ -1,0 +1,56 @@
+html, body {
+    font-size: 16p;
+}
+
+/* Text weight for the paragraph */
+p {
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+/* Heading style */
+h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 500;
+    text-align: left;
+    padding-top: 15px;
+}
+
+/* Adress allignment */
+address {
+    text-align: center;
+}
+
+/* URL Styling */
+address a {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #4F3674;
+    text-decoration: none;
+}
+
+/* Hover for web link */
+address a:hover {
+    text-decoration: underline;
+    background-color: #D6A800;
+}
+
+/* Visted for web link */
+address a:visited {
+    color: #B8860B
+}
+
+/* Sentence styling */
+.sentence {
+    font-style: italic;
+}
+
+/* Intro class styling */
+.intro {
+    text-indent: 2em;
+}
