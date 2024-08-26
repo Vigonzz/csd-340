@@ -1,0 +1,31 @@
+/* Violet Gonzalez, assignment 3.2 */
+
+body {
+    font-family: 'Libre Baskerville', serif;
+}
+
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h1, h2, h3, h4 {
+    background-color: #849E8A;
+    color: #D7CFA1;
+    border: 1px solid #D6A800;
+    padding: 10px;
+}
+
+a {
+    color: #84869B;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #7C8CA1;
+}
+
+a:visited {
+    color: #A59DA5
+}
