@@ -1,0 +1,54 @@
+body, h1, h3, figure {
+    font-family: Arial, sans-serif;
+}
+
+#main {
+    margin: 50px 100px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 400;
+    color: rgba(214, 139, 30, 0.8);
+    padding: 10px;
+}
+
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    margin-top: 10%;
+}
+
+.image {
+    border: 1px solid rgba(214, 139, 30, 0.8);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.image h3 {
+    text-align: center;
+    font-weight: 300;
+}
+
+.image figure {
+    text-align: center;
+}
+
+.image img {
+    width: 400px;
+    height: 350px;
+}
+
+.back-link {
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+    text-decoration: none;
+    color:rgba(214, 139, 30, 0.8);
+    font-weight: 400;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
