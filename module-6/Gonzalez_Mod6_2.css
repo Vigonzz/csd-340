@@ -15,7 +15,7 @@ h1 {
 
 #navbar {
     overflow: hidden;
-    background-color: #B5485D;
+    background-color: #C9C9B3;
     border-bottom: 15px #B1A794;
 }
 
@@ -59,7 +59,7 @@ h1 {
 .card-title {
     text-align: center;
     font-size: 2em;
-    color: #C9C9B3;
+    color: #B5485D;
     font-weight: 400;
 }
 
@@ -68,7 +68,7 @@ h1 {
 }
 
 footer {
-    background-color: #B5485D;
+    background-color: #C9C9B3;
     position: absolute;
     bottom: 0;
     width: 100%;
