@@ -41,13 +41,6 @@ h1 {
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 30px;
-    box-shadow: 0 4px 8px 0 and an rgba(0, 0, 0, 0.2);
-    margin: 2% 5% 5% 100px;
-}
-
-#movies:hover {
-    box-shadow: 0 4px 8px 0 and an rgba(0, 0, 0, 0.2);
-    width: 50%;
 }
 
 #movies th {
