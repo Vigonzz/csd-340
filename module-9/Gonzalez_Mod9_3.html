@@ -1,0 +1,81 @@
+<!--Violet Gonzalez, assignment 9.3 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Development with HTML and CSS</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="This page hold the contents of CSD-340 class.">
+    <meta name="keywords" content="HTML, CSS, web development">
+    <meta name="author" content="Violet Gonzalez">
+    <link rel="stylesheet" href="C:\csd\csd-340\module-2\Gonzalez_Mod2_2.css">
+
+    <script>
+        var firstVaribleValue = "song";
+        var secondVaribleValue = "knight";
+        var thirdVaribleValue = "Eldorado";
+        var fourthVaribleValue = "valley";
+    </script>
+</head>
+
+<body>
+    <div id="container"></div>
+    <h1>Assignment 9.3: JavaScript - Part 1</h1>
+    <h2>Eldorado by Edgar Allen Poe</h2>
+
+    <p class="Poem">
+       Gaily bedight,
+       A gallant knight,
+       In sunshine and in shadow,
+       Had journeyed long,
+       Singing a <span id="song">____</span>,
+       In search of Eldorado.
+    </p>
+    
+    <p>
+        But he grew old-
+        This <span id="knight">____</span> so bold-
+        And o'er his heart a shadow
+        Fell as he found
+        No spot of ground
+        That looked like Eldorado.
+    </p>
+
+    <p>
+        And, as his strength
+        Failed him at length,
+        He met a pilgrim shadow-
+        "Shadow," said he,
+        "Where can it be-
+        This land of <span id="Eldorado">____</span>?"
+    </p>
+
+    <p>
+        "Over the Mountains
+        Of the Moon,
+        Down the <span id="valley">____</span> of the Shadow,
+        Ride, boldly ride,"
+        The shade replied-
+        "If you seek for Eldorado!"
+    </p>
+
+    <p>
+        <button type="button"
+        onclick="document.getElementById('song').innerHTML =firstVaribleValue">song</button> <br />
+        <button type="button"
+        onclick="document.getElementById('knight').innerHTML =secondVaribleValue">knight</button> <br />
+        <button type="button"
+        onclick="document.getElementById('Eldorado').innerHTML =thirdVaribleValue">Eldorado</button> <br />
+        <button type="button"
+        onclick="document.getElementById('valley').innerHTML =fourthVaribleValue">valley</button> <br />
+    </p>
+    
+    <hr />
+    <address>
+        <p><a href="https://www.bellevue.edu/">Bellevue University</a></p>
+        <p>1000 Galivn Road South</p>
+        <p>Bellevue, NE 68005</p>
+    </address>
+</body>
+
+</html> 
