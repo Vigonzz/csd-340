@@ -1,0 +1,64 @@
+<!--Violet Gonzalez, assignment 10.3 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSD 340 Web Development with HTML and CSS</title>
+        <script>
+            function imageSwap(imgName, clickSrc, dbClickSrc) {
+                const img = document.getElementsByName(imgName)[0];
+                let isAlternate = false;
+
+                img.onclick = function() {
+                    isAlternate = !isAlternate;
+                    this.src = isAlternate ? clickSrc : this.getAttribute('data-original-src');
+                };
+
+                img.ondblclick = function() {
+                    this.src = dbClickSrc;
+                };
+
+                img.setAttribute('data-original-src', img.src);
+            }
+
+            function uniformSize(width, height) {
+                const images = document.getElementsByTagName('img');
+                for (let img of images) {
+                    img.style.width = width + 'px';
+                    img.style.height = height + 'px';
+                }
+            }
+
+            window.onload = function() {
+                imageSwap('bubble', 'bubble_girl.jpg', 'bubble_girl.jpg');
+                imageSwap('sawako', 'happy_sawako.jpg', 'happy_sawako.jpg');
+                uniformSize(700,400);
+            };
+        </script>
+    </head>
+
+    <body>
+        <h1>Assignment 10.3: JavaScript - Part 2</h1>
+        <h3>Click the images to see a suprise, click again to go back</h3>
+        <br />
+        <div>
+
+            <a href="#">
+            <img border = 0 name = "bubble" src = "bubble_guy.jpg" alt="Hibiki">
+            </a>
+        </div>
+        <h3>"Someday, let's meet again" - Uta</h3>
+    
+        <br />
+        <br />
+        <br />
+
+        <div>
+
+            <a href=#>
+            <img border = 0 name = "sawako" src = "sad_sawako.jpg" alt="Sawako's emotions">
+            </a>
+        </div>
+        <h3>"It was like you brought color to my life. You changed my life, all by yourself." - Sawako</h3>
+    </body>
+</html>
