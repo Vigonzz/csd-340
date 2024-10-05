@@ -1,0 +1,92 @@
+<!-- Violet Gonzalez, assignmnet 11.2 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSD 340 Web Development with HTML and CSS</title>
+
+        <style>
+            body {
+                font-family: 'Josefin Slab', sans-serif;
+                max-width: 700px;
+                margin: auto;
+            }
+        </style>
+
+        <script>
+            let myArray = [];
+
+            function addElement() {
+                const input = document.getElementById('inputText');
+                const value = input.value.trim();
+                if (value) {
+                    myArray.push(value);
+                    const newIndex = myArray.length;
+                    alert(`"${value}" Added to index ${newIndex}`);
+                    input.value = '';
+                } else {
+                    alert("Please enter a value, then click 'Add'");
+                }
+            }
+
+            function deleteLastElement() {
+                if (myArray.length > 0) {
+                    const deleted = myArray.pop();
+                    alert(`Deleted last entry: "${deleted}"`);
+                } else {
+                    alert("The array has nothing... There can defintly be something");
+                }
+            }
+
+            function deleteAnyElement() {
+                const indexInput = document.getElementById('deleteIndex');
+                const index = parseInt(indexInput.value);
+
+                if (index > 0 && index <= myArray.length) {
+                    const deleted = myArray.splice(index - 1, 1)[0];
+                    alert(`Deleted entry ${index}: "${deleted}"`);
+                    indexInput.value = '';
+                } else {
+                    alert("Invalid index. It must be a positive number (FROM YOUR LIST) entered");
+                }
+            }
+
+            function displayArray() {
+                const output = document.getElementById('output');
+                if (myArray.length > 0) {
+                    const displayList = myArray.map((item, index) => `${index + 1}. ${item}`);
+                    output.innerHTML = displayList.join('<br>');
+                } else {
+                    output.innerHTML = "Spooky, it's a blank list... let's add something!";
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Assignment 11.2: JavaScript - Part 3</h1>
+        <h3>Welcome to your to-do list! When you need to add a task, enter it in the text box then select display to see and refresh your list. 
+            If you want to delete your last entry or a sprecific entry just select display to see the refreshed version. 
+        </h3>
+        
+        <hr />
+        <br />
+
+        <input type="text" id="inputText" placeholder="Enter text">
+        <button onclick="addElement()">Add</button>
+        <button onclick="deleteLastElement()">Delete Last Entry</button>
+        <button onclick="displayArray()">Display</button>
+
+        <br />
+        <br />
+
+        <input type="number" id="deleteIndex" placeholder="Index" min="1">
+        <button onclick="deleteAnyElement()">Delete Specific Entry</button>
+
+        <br />
+        <br />
+        <hr />
+
+        <p id="output"></p>
+    </body>
+</html>
